@@ -1,5 +1,8 @@
-package com;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Task {
-    
-}
+class Task {
+    String description;
+    int duration;
+    CrewMember assignedMember;
+
