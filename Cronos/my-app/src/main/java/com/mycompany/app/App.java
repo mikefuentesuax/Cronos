@@ -4,7 +4,7 @@ import com.Monitor;
 import com.Resource;
 
 public class App 
-{
+{ 
     //Ejercicio Del Cronometro 
     //
     // Definir las conversiones de tiempo para el nuevo planeta
@@ -48,7 +48,7 @@ public class App
 
 
         //Ejercicio de Recursos
-
+        //
         // Crear recursos
         Resource water = new Resource("Agua", 2); // 2 litros de agua por día
         Resource food = new Resource("Comida", 1.5); // 1.5 kg de comida por día
@@ -59,6 +59,28 @@ public class App
         printConsumption(water, 5);
         printConsumption(food, 5);
         printConsumption(oxygen, 5);
+
+
+        //Ejercicio de Monitor
+        //
+        Monitor monitor = new Monitor();
+        while (true) {
+            // Aquí puedes actualizar los niveles de radiación, temperatura y presión
+            monitor.radiationLevel = 101.0;
+            monitor.temperature = 51.0;
+            monitor.pressure = 1001.0;
+
+            monitor.monitorVariables();
+            // Aquí puedes identificar un evento crítico, por ejemplo, el número 7
+            monitor.identifyCriticalEvents(7);
+            // Aquí puedes descomponer un problema complejo, por ejemplo, el número 315
+            System.out.println(monitor.decomposeProblem(315));
+            try {
+                Thread.sleep(1000);  // Espera un segundo antes de la próxima iteración
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 
@@ -97,20 +119,11 @@ public class App
         }
     }
 
-    Monitor monitor = new Monitor(){
-        while (true) {
-            monitor.monitorVariables();
-            // Aquí puedes identificar un evento crítico, por ejemplo, el número 7
-            monitor.identifyCriticalEvents(7);
-            // Aquí puedes descomponer un problema complejo, por ejemplo, el número 315
-            System.out.println(monitor.decomposeProblem(315));
-            try {
-                Thread.sleep(1000);  // Espera un segundo antes de la próxima iteración
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
 
-    }
+    //Ejercicio de Monitor
+    //
+
+
+    
 }
 
