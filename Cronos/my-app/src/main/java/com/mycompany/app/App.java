@@ -1,5 +1,6 @@
 package com.mycompany.app;
 
+import com.Monitor;
 import com.Resource;
 
 public class App 
@@ -95,4 +96,21 @@ public class App
             return calculateConsumption(multiplier) / 30;
         }
     }
+
+    Monitor monitor = new Monitor(){
+        while (true) {
+            monitor.monitorVariables();
+            // Aquí puedes identificar un evento crítico, por ejemplo, el número 7
+            monitor.identifyCriticalEvents(7);
+            // Aquí puedes descomponer un problema complejo, por ejemplo, el número 315
+            System.out.println(monitor.decomposeProblem(315));
+            try {
+                Thread.sleep(1000);  // Espera un segundo antes de la próxima iteración
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
 }
+
