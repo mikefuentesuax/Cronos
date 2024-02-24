@@ -2,6 +2,8 @@ package com.mycompany.app;
 
 public class App 
 {
+    //Ejercicio Del Cronometro 
+    //
     // Definir las conversiones de tiempo para el nuevo planeta
     static double earthSecondsInDay = 86400; // 24 hours * 60 minutes * 60 seconds
     static double earthDaysInYear = 365.25; // Including leap year
