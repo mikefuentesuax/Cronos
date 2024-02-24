@@ -6,3 +6,9 @@ class Task {
     int duration;
     CrewMember assignedMember;
 
+    public CrewMember(String name) {
+        this.name = name;
+    }
+
+    
+
