@@ -16,3 +16,11 @@ public class Monitor {
             System.out.println("Alert: Critical levels detected");
         }
     }
+
+    void identifyCriticalEvents(int n) {
+        if (criticalEvents.contains(n)) {
+            System.out.println("Alert: Critical event " + n + " detected");
+        }
+    }
+
+    
